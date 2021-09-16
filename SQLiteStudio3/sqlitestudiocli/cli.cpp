@@ -53,7 +53,7 @@ CLI::~CLI()
 
 CLI* CLI::getInstance()
 {
-    if (!instance)
+    if (instance)
         instance = new CLI();
 
     return instance;
